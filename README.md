@@ -93,3 +93,89 @@ Configure environment variables and install relevant dependencies.If you need to
 ## Learn More
 
 You can also check the help documentation: Download and Building the app（ [https://intl.cloud.baidu.com/en/doc/MIAODA/s/download-and-building-the-app-en](https://intl.cloud.baidu.com/en/doc/MIAODA/s/download-and-building-the-app-en)）to learn more detailed content.
+
+
+
+# CivicMind AI – Governance Intelligence System
+
+CivicMind AI is an AI-powered digital governance platform that helps governments manage and analyze citizen complaints efficiently.
+
+---
+
+## 🚀 Features
+
+- Citizen complaint submission portal
+- Complaint tracking system
+- Admin dashboard for government officials
+- AI-powered audit queue to detect suspicious complaints
+- Complaint analytics dashboard
+- Priority and status management
+
+---
+
+## 🏛 Admin Portal Modules
+
+### Dashboard
+View statistics such as:
+
+- Total complaints
+- Urgent complaints
+- Resolved complaints
+- Under audit cases
+
+### Complaints Management
+Admins can:
+
+- View complaints
+- Track complaint status
+- Manage complaint priority
+
+### Audit Queue
+AI automatically flags suspicious complaints and sends them for manual review.
+
+Admins can:
+
+- Approve complaint
+- Reject complaint
+- Escalate complaint
+
+### Analytics
+Displays system insights such as:
+
+- Total complaints
+- Resolution rate
+- Urgent issues
+
+---
+
+## 🛠 Tech Stack
+
+Frontend:
+- React
+- TypeScript
+- Vite
+- TailwindCSS
+
+Backend:
+- Supabase
+
+Tools:
+- Git
+- GitHub
+
+---
+
+## 📁 Project Structure
+
+---
+
+## 👨‍💻 Author
+
+**Tamilarasan S**  
+Computer Science Engineering Student
+
+---
+
+## 📌 Project Purpose
+
+This project simulates a **Smart Governance System** where citizens can report issues and government authorities can analyze and resolve them using an intelligent dashboard.
