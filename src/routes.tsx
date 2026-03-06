@@ -1,16 +1,19 @@
-import HomePage from './pages/HomePage';
-import SubmitComplaintPage from './pages/SubmitComplaintPage';
-import TrackComplaintPage from './pages/TrackComplaintPage';
-import AdminDashboardPage from './pages/AdminDashboardPage';
-import AdminComplaintsPage from './pages/AdminComplaintsPage';
-import AdminComplaintDetailPage from './pages/AdminComplaintDetailPage';
-import type { ReactNode } from 'react';
+import HomePage from './pages/HomePage'
+import SubmitComplaintPage from './pages/SubmitComplaintPage'
+import TrackComplaintPage from './pages/TrackComplaintPage'
+import AdminDashboardPage from './pages/AdminDashboardPage'
+import AdminComplaintsPage from './pages/AdminComplaintsPage'
+import AdminComplaintDetailPage from './pages/AdminComplaintDetailPage'
+import AdminAnalyticsPage from './pages/AdminAnalyticsPage'
+import AdminAuditPage from './pages/AdminAuditPage'
+
+import type { ReactNode } from 'react'
 
 interface RouteConfig {
-  name: string;
-  path: string;
-  element: ReactNode;
-  visible?: boolean;
+  name: string
+  path: string
+  element: ReactNode
+  visible?: boolean
 }
 
 const routes: RouteConfig[] = [
@@ -19,31 +22,48 @@ const routes: RouteConfig[] = [
     path: '/',
     element: <HomePage />
   },
+
   {
     name: 'Submit Complaint',
     path: '/submit',
     element: <SubmitComplaintPage />
   },
+
   {
     name: 'Track Complaint',
     path: '/track',
     element: <TrackComplaintPage />
   },
+
   {
     name: 'Admin Dashboard',
     path: '/admin',
     element: <AdminDashboardPage />
   },
+
   {
     name: 'Admin Complaints',
     path: '/admin/complaints',
     element: <AdminComplaintsPage />
   },
+
   {
     name: 'Admin Complaint Detail',
     path: '/admin/complaint/:id',
     element: <AdminComplaintDetailPage />
-  }
-];
+  },
 
-export default routes;
+  {
+    name: 'Analytics',
+    path: '/admin/analytics',
+    element: <AdminAnalyticsPage />
+  },
+
+  {
+    name: 'Audit Queue',
+    path: '/admin/audit',
+    element: <AdminAuditPage />
+  }
+]
+
+export default routes
